@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fyago — IT Graduate from Kenya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f3f6f1; --ink:#14261c; --muted:#4f6357; --accent:#0e7a4f; --accent-ink:#ffffff; --line:#cfdacd; --panel:#e4ede1;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1a14;--ink:#e6efe8;--muted:#9bb0a2;--accent:#4ed39a;--accent-ink:#06210f;--line:#264034;--panel:#16261d}
+}
+:root[data-theme="dark"]{--bg:#0f1a14;--ink:#e6efe8;--muted:#9bb0a2;--accent:#4ed39a;--accent-ink:#06210f;--line:#264034;--panel:#16261d}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:0 22px 64px}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.mark{font:800 22px "Bricolage Grotesque",serif;text-decoration:none}
+nav{display:flex;gap:18px;font-weight:500;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 48px}
+.hero h1{font-size:clamp(52px,16vw,104px);font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:clamp(19px,4.6vw,24px);max-width:30ch;margin:22px 0 28px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line);margin-left:8px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:34px;font-weight:700;margin-bottom:18px;letter-spacing:-.02em}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--accent)}
+.timeline li{padding:0 0 26px 20px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.timeline h3{font-size:21px;margin-bottom:4px}
+.timeline p{margin:0;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills li{background:var(--panel);padding:8px 16px;border-radius:10px;font-weight:500}
+.contact a.big{display:block;font:700 clamp(22px,6vw,32px) "Bricolage Grotesque",serif;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.contact a.big:hover{color:var(--accent)}
+footer{color:var(--muted);font-size:14px;padding-top:30px}
+@media (max-width:420px){.btn.alt{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <a class="mark" href="#top">Fyago</a>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero" id="top">
+  <h1>Hi, I'm Fyago.</h1>
+  <p>IT graduate from Kenya who keeps networks, systems and people running.</p>
+  <a class="btn" href="#contact">Get in touch</a><a class="btn alt" href="#journey">See my journey</a>
+</div>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>My full name is Nyawara Eliakim James, but everyone calls me Fyago. I hold a BSc in Information Technology from Machakos University and I'm based in Kenya. I like practical work: infrastructure that stays up, tools that save time, and clear communication with the people who depend on them.</p>
+</section>
+
+<section id="journey">
+  <h2>My journey</h2>
+  <ul class="timeline">
+    <li><h3>Dreamlife Management</h3><p>Current role.</p></li>
+    <li><h3>ICT Authority of Kenya</h3><p>Industrial attachment supporting NOFBI infrastructure, Kenya's national fibre-optic backbone network.</p></li>
+    <li><h3>Machakos University</h3><p>BSc. Information Technology.</p></li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>What I work with</h2>
+  <ul class="skills">
+    <li>IT infrastructure support</li><li>Networking</li><li>Troubleshooting</li><li>Remote work</li><li>Documentation</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's talk</h2>
+  <a class="big" href="mailto:jameseliakim85@gmail.com">jameseliakim85@gmail.com</a>
+  <a class="big" href="https://www.linkedin.com/in/james-nyawara-099957434">LinkedIn</a>
+</section>
+
+<footer>© <span id="y">2026</span> Fyago. Based in Kenya.</footer>
+</main>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
